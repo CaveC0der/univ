@@ -14,8 +14,8 @@ public class Controller {
     private final ObjectInputStream fromServer;
     public final String ID;
 
-    public Controller(Socket socket) throws IOException, ClassNotFoundException {
-        this.socket = socket;
+    public Controller(String hostname, int port) throws IOException, ClassNotFoundException {
+        socket = new Socket(hostname, port);
         toServer = new ObjectOutputStream(socket.getOutputStream());
         fromServer = new ObjectInputStream(socket.getInputStream());
         toServer.writeObject(new ConnectionMessage());

@@ -12,7 +12,7 @@ public class App {
 
     public App(String hostname, int port) {
         try {
-            controller = new Controller(new Socket(hostname, port));
+            controller = new Controller(hostname, port);
 
             frame = new RowCalculatorFrame(controller);
         } catch (Exception e) {
