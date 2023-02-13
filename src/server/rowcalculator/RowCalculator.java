@@ -13,6 +13,7 @@ public class RowCalculator {
 
     public static double calculate(double a, double b, double x, double y) {
         double result = 1;
+        x = Math.log(x);
         double numerator = Math.log(x) + b * y + a * Math.pow(x, 2);
         for (int i = 0; i <= 10; i++) {
             result *= Math.pow(-1, i) * numerator / (factorial(i) * Math.E);
