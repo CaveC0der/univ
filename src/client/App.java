@@ -3,8 +3,6 @@ package client;
 import client.controller.Controller;
 import client.view.RowCalculatorFrame;
 
-import java.net.Socket;
-
 public class App {
     private Controller controller;
 
