@@ -16,7 +16,6 @@ public class Server {
     private ServerFrame frame;
     private boolean up = false;
 
-
     private byte[] buffer = new byte[578];
     private InetAddress clientAddress;
     private int clientPort;
