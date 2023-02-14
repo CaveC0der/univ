@@ -13,6 +13,7 @@ import java.util.UUID;
 
 public class Server {
     private DatagramSocket serverSocket;
+    private ServerFrame frame;
     private boolean up = false;
 
 
@@ -25,7 +26,7 @@ public class Server {
         try {
             serverSocket = new DatagramSocket(new InetSocketAddress(hostname, port));
 
-            ServerFrame frame = new ServerFrame(this);
+            frame = new ServerFrame(this);
 
             System.out.println("server: " + serverSocket.getLocalSocketAddress().toString());
 
