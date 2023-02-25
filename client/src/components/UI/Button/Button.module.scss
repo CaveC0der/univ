@@ -1,0 +1,17 @@
+@use "../../../shared_styles/colors" as *;
+@use "../../../shared_styles/constants" as *;
+
+._ {
+    width: 6em;
+    padding: 5px 10px;
+    border: solid $ui-component-border-width transparent;
+    border-radius: $ui-component-border-radius;
+    background-color: $ui-component-bg-color;
+    color: $text-color;
+    font-size: 1em;
+    transition: $transition-time;
+}
+
+._:hover {
+    background-color: rgba($ui-component-bg-color, 50%);
+}

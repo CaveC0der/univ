@@ -1,0 +1,16 @@
+@use "../../../shared_styles/colors" as *;
+@use "../../../shared_styles/constants" as *;
+
+._ {
+    width: 6em;
+    padding: 2px 5px;
+    border: solid $ui-component-border-width $ui-component-bg-color;
+    border-radius: $ui-component-border-radius;
+    color: $text-color;
+    font-size: 1em;
+}
+
+._:focus {
+    outline: none;
+    box-shadow: 0 0 5px $ui-component-bg-color;
+}

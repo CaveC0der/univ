@@ -1,0 +1,23 @@
+@use "../../shared_styles/colors" as *;
+@use "../../shared_styles/constants" as *;
+
+.row-calculator {
+    justify-content: center;
+    width: 30em;
+    padding: 1em;
+    background-color: $component-bg-color;
+    border-radius: $component-border-radius;
+    text-align: center;
+}
+
+.row-calculator .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.row-calculator h1, .row-calculator h3, .row-calculator label {
+    color: $text-color;
+}
