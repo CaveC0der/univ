@@ -1,0 +1,32 @@
+@use "../../shared_styles/colors" as *;
+@use "../../shared_styles/constants" as *;
+
+.prns-generator {
+    justify-content: center;
+    width: 30em;
+    padding: 1em;
+    background-color: $component-bg-color;
+    border-radius: $component-border-radius;
+    text-align: center;
+}
+
+.prns-generator .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.prns-generator h1, .prns-generator h3, .prns-generator label {
+    color: $text-color;
+}
+
+.prns-generator .form-row.buttons-row {
+    justify-content: space-around;
+}
+
+.form-row.buttons-row .question {
+    width: fit-content;
+    height: fit-content;
+}
