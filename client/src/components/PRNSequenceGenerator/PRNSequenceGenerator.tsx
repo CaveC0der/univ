@@ -17,8 +17,8 @@ const PRNSequenceGenerator: FC = () => {
     const parseData = () => [seed, multiplier, increment, modulus, sequenceLength].map(value => parseFloat(value));
 
     const validateData = (data: number[]): boolean => {
-        if (data.some(value => isNaN(value) || !Number.isInteger(value) || value < 0)) {
-            setMessage(<h3>One or more of numbers is NaN or not Integer or less than 0!</h3>);
+        if (data.some(value => isNaN(value) || !Number.isInteger(value) || value <= 0)) {
+            setMessage(<h3>One or more of numbers is NaN or not Integer or equal or less than 0!</h3>);
             setModal(true);
             return false;
         }
